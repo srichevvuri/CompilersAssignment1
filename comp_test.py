@@ -70,7 +70,7 @@ def tokenization(lines):
                 tokens['Separators'].append(element)
 
         #if the element does not fall into the other categories, it will be a Literal
-        elif element not in tokens['Keywords'] and element not in tokens['Identifiers'] and element not in tokens['Separators']:
+        elif element not in tokens['Keywords'] and element not in tokens['Identifiers'] and element not in tokens['Separators'] and element not in tokens['Operators']:
             tokenCount+= 1
             if element not in tokens['Literals']:
                 tokens['Literals'].append(element)
